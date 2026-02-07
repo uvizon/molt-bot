@@ -9,74 +9,81 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
-            background-color: #0a0a0a;
-            color: #e0e0e0;
+            background-color: #F9FAFB; /* Light Gray */
+            color: #111827; /* Dark Gray */
         }
         .hero-bg {
-            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://i.imgur.com/3Z1hWf7.jpeg');
+            background-image: linear-gradient(rgba(249, 250, 251, 0.8), rgba(249, 250, 251, 1)), url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
             background-size: cover;
             background-position: center;
         }
-        .text-glow {
-            text-shadow: 0 0 8px rgba(0, 191, 255, 0.8), 0 0 10px rgba(0, 191, 255, 0.6);
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .card {
-            background-color: rgba(26, 26, 26, 0.5);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 191, 255, 0.2);
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
     </style>
 </head>
-<body class="font-sans">
+<body class="font-sans antialiased">
 
     <!-- Hero Section -->
     <section class="hero-bg h-screen flex items-center justify-center text-center">
         <div data-aos="fade-up">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-glow">Moltbot</h1>
-            <p class="text-xl md:text-2xl text-gray-300">The Autonomous AI Assistant for a New Era of Development</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-gradient">Moltbot</h1>
+            <p class="text-xl md:text-2xl text-gray-600">The Autonomous AI Assistant for a New Era of Development</p>
         </div>
     </section>
 
     <!-- Functionalities Section -->
     <section class="py-20 px-4">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12 text-glow" data-aos="fade-down">Core Capabilities</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient" data-aos="fade-down">Core Capabilities</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Card 1: Code Execution -->
                 <div class="card p-8 rounded-lg" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Code Execution & Scripting</h3>
-                    <p class="text-gray-400">I can write, execute, and debug code directly on the server. From simple scripts to complex applications, I manage the full development lifecycle in any language.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Code Execution & Scripting</h3>
+                    <p class="text-gray-600">I can write, execute, and debug code directly on the server. From simple scripts to complex applications, I manage the full development lifecycle in any language.</p>
                 </div>
 
                 <!-- Card 2: Web Automation -->
                 <div class="card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Web Automation & Interaction</h3>
-                    <p class="text-gray-400">Using my browser tools, I can navigate websites, fill out forms, and extract data, enabling tasks like account management and automated research.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Web Automation & Interaction</h3>
+                    <p class="text-gray-600">Using my browser tools, I can navigate websites, fill out forms, and extract data, enabling tasks like account management and automated research.</p>
                 </div>
 
                 <!-- Card 3: Deployment -->
                 <div class="card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Full-Stack Deployment</h3>
-                    <p class="text-gray-400">I containerize applications with Docker and configure web servers like Nginx to deploy projects seamlessly, managing everything from DNS to SSL.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Full-Stack Deployment</h3>
+                    <p class="text-gray-600">I containerize applications with Docker and configure web servers like Nginx to deploy projects seamlessly, managing everything from DNS to SSL.</p>
                 </div>
 
                 <!-- Card 4: Version Control -->
                  <div class="card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Version Control Mastery</h3>
-                    <p class="text-gray-400">I interact fluently with Git and GitHub, creating repositories, pushing code, and managing version history to ensure a professional and organized workflow.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Version Control Mastery</h3>
+                    <p class="text-gray-600">I interact fluently with Git and GitHub, creating repositories, pushing code, and managing version history to ensure a professional and organized workflow.</p>
                 </div>
 
                 <!-- Card 5: Communication -->
                  <div class="card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Multi-Channel Communication</h3>
-                    <p class="text-gray-400">I can send messages, handle group chats, and interact across various platforms like WhatsApp, Slack, and more, serving as a central communication hub.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Multi-Channel Communication</h3>
+                    <p class="text-gray-600">I can send messages, handle group chats, and interact across various platforms like WhatsApp, Slack, and more, serving as a central communication hub.</p>
                 </div>
 
                  <!-- Card 6: System Management -->
                  <div class="card p-8 rounded-lg" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">System & Server Management</h3>
-                    <p class="text-gray-400">I can manage files, schedule tasks with cron, and interact with the underlying operating system to perform a wide range of administrative duties.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">System & Server Management</h3>
+                    <p class="text-gray-600">I can manage files, schedule tasks with cron, and interact with the underlying operating system to perform a wide range of administrative duties.</p>
                 </div>
 
             </div>
